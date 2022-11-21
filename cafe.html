@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Coffee Site!</title>
+    <style> 
+    *{scroll-behavior: smooth;}
+    </style>
+  </head>
+   
+  <body class="font-sans font-serif p-0 m-0 box-border outline-none border-none bg-black">
+
+
+    <!-- header section starts  -->
+    <header class="bg-black flex fixed items-center justify-between p-6 border w-screen left-0 right-0">
+      <a href="#" class="w-16 ml-6">
+        <img src="images/logo.png"/>
+      </a> 
+
+      <nav class="m-0 text-xl text-white">
+        <a href="#home" class="hover:underline decoration-orange-800 p-2">Home</a>
+        <a href="#about" class="hover:underline decoration-orange-800 p-2">About</a>
+        <a href="#menu" class="hover:underline decoration-orange-800 p-2">Menu</a>
+        <a href="#review" class="hover:underline decoration-orange-800 p-2">Review</a>
+        <a href="#contact" class="hover:underline decoration-orange-800 p-2">Contact</a>
+      </nav>
+      
+      <!-- CART -->
+      <div class="cursor-pointer text-white text-xl mr-4">
+        <div class="fas fa-shopping-cart hover:text-2xl" id="cart-btn"><span>0</span></div>
+      </div>
+
+      
+      <div class="absolute bottom-0 right-14 mr-14 h-0 w-16 hidden">
+        <div class="bg-white relative flex mt-3 items-center gap-3">
+          <span class="fas fa-times absolute top-5 right-0 text-white"></span>
+          <img src="images/cart-item-1.png" alt="">
+          <div class="text-white">
+              <h3>item1</h3>
+              <div class="price">415/-</div>
+          </div>
+      </div>
+
+        <div class="bg-white relative flex mt-3 items-center gap-3">
+            <span class="fas fa-times absolute top-5 right-0 text-white"></span>
+            <img src="images/cart-item-2.png">
+            <div class="text-white">
+                <h3>item2</h3>
+                <div class="price">599/-</div>
+            </div>
+        </div>
+        
+        <div class="bg-white relative flex mt-3 items-center gap-3">
+            <span class="fas fa-times absolute top-5 right-0 text-white"></span>
+            <img src="images/cart-item-3.png">
+            <div class="text-white">
+                <h3>item3</h3>
+                <div class="price">751/-</div>
+            </div>
+        </div>
+        
+        <div class="bg-white relative flex mt-3 items-center gap-3">
+            <span class="fas fa-times absolute top-5 right-0 text-white"></span>
+            <img src="images/cart-item-4.png">
+            <div class="text-white">
+                <h3>item4</h3>
+                <div class="price">879/-</div>
+            </div>
+        </div>
+        <a href="#" class="ml-8 text-white h-10 px-5 text-white bg-yellow-800 rounded-lg hover:bg-violet-400">checkout</a>
+    </div>
+  </header>
+      <!-- header section ends -->
+
+
+
+      <!-- home section starts  -->
+      <section class="min-h-screen flex items-center bg-no-repeat bg-center bg-cover bg-center p-8" style="background-image: url(../images/home-img.jpeg)" id="home">
+        <div class="max-w-4xl">
+          <h3 class="uppercase p-4 text-white text-6xl font-medium">fresh coffee in <br> the morning</h3>
+          <p class="text-lg p-4 leading-8 text-slate-300 ml-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
+          <a href="#" class="mt-4 ml-5 hover:bg-violet-400 inline-block text-white p-3.5 text-xl bg-yellow-800">Get Yours Now</a>
+        </div>
+      </section>
+      <!-- home section ends -->
+
+
+
+       <!-- about section starts  -->
+      <section class="p-14" id="about">
+        <h1 class="text-center text-white uppercase pb-12 text-4xl mt-6"> <span class="uppercase text-yellow-800" >about</span> us </h1>
+        <div class="flex justify-center bg-black px-8">
+          <div class="w-1/2">
+            <img src="images/about-img.jpeg">
+          </div>
+          
+          <div class="max-w-2xl w-1/2 bg-slate-900 p-8 ">
+            <h3 class="text-white text-2xl uppercase pl-3">what makes our coffee special?</h3>
+            <p class="text-slate-300 font-light leading-7 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
+            <p class="text-slate-300 font-light leading-7 p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
+            <a href="#" class="mt-4 ml-5 hover:bg-violet-400 inline-block text-white p-3.5 text-xl bg-yellow-800 p-4">learn more</a>
+          </div>
+        </div>
+      </section>
+       <!-- about section ends -->
+
+
+       <!-- menu section starts  -->
+      <section class="p-20" id="menu">
+        <h1 class="text-center text-white uppercase pb-12 text-4xl"> our <span class="uppercase text-yellow-800">menu</span> </h1>
+        
+        <div class="grid grid-cols-3 gap-14">
+          
+          <div class="p-20 text-center border text-white" id="item">
+              <img class="h-28 ml-11" src="images/menu-1.png">
+              <h3 class="text-3xl mt-2">Americano</h3>
+              <div class="text-xl">245/-</div>
+              <a href="#" class="hover:bg-violet-400 inline-block text-white p-3 text-xl bg-yellow-800 mt-3" onclick="Counter[0]()">Add to Cart</a>
+              <a href="#" class="hover:bg-violet-400 inline-block text-white p-3 text-xl bg-yellow-800 mt-3" onclick="Counter[1]()">Remove from Cart</a>
+          </div>
+    
+          <div class="p-20 text-center border text-white">
+              <img class="h-28 ml-11" src="images/menu-2.png">
+              <h3 class="text-3xl mt-2">Cappuccino</h3>
+              <div class="text-xl">280/-</div>
+              <a href="#" class="hover:bg-violet-400 inline-block text-white p-3 text-xl bg-yellow-800 mt-3" onclick="Counter[0]()">Add to Cart</a>
+              <a href="#" class="hover:bg-violet-400 inline-block text-white p-3 text-xl bg-yellow-800 mt-3" onclick="Counter[1]()">Remove from Cart</a>          
+          </div>
+
+          <div class="p-20 text-center border text-white">
+              <img class="h-28 ml-11" src="images/menu-3.png">
+              <h3 class="text-3xl mt-2">Latte</h3>
+              <div class="text-xl">299/-</div>
+              <a href="#" class="hover:bg-violet-400 inline-block text-white p-3 text-xl bg-yellow-800 mt-3">Add to Cart</a>
+          </div>
+    
+          <div class="p-20 text-center border text-white">
+              <img class="h-28 ml-11" src="images/menu-4.png">
+              <h3 class="text-3xl mt-2">Espresso</h3>
+              <div class="text-xl">365/-</div>
+              <a href="#" class="hover:bg-violet-400 inline-block text-white p-3 text-xl bg-yellow-800 mt-3">Add to Cart</a>
+          </div>
+    
+           <div class="p-20 text-center border text-white">
+               <img class="h-28 ml-11" src="images/menu-5.png">
+               <h3 class="text-3xl mt-2">Mocha</h3>
+               <div class="text-xl">320/-</div>
+               <a href="#" class="hover:bg-violet-400 inline-block text-white p-3 text-xl bg-yellow-800 mt-3">Add to Cart</a>
+           </div>
+    
+          <div class="p-20 text-center border text-white">
+              <img class="h-28 ml-11" src="images/menu-6.png">
+              <h3 class="text-3xl mt-2">Frappuccino</h3>
+              <div class="text-xl">350/-</div>
+              <a href="#" class="hover:bg-violet-400 inline-block text-white p-3 text-xl bg-yellow-800 mt-3">Add to Cart</a>
+          </div>
+        </div>
+      </section>
+      <!-- menu section ends -->
+
+
+      <!-- review section starts  -->
+      <section class="p-20" id="review">
+        <h1 class="text-center text-white uppercase pb-12 text-4xl"> customer's <span class="uppercase text-yellow-800">review</span></h1>
+        <div class="grid grid-cols-3 gap-14">
+          <div class="p-14 text-center border text-white ">
+            <p class="text-xl font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis?</p>
+            <img src="images/pic-1.png" class="mt-4 ml-5 rounded-full">
+            <h3 class="mt-4 text-2xl font-sans">John Deo</h3>
+          </div>
+
+          <div class="p-14 text-center border text-white">
+            <p class="text-xl font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis?</p>
+            <img src="images/pic-2.png" class="mt-4 ml-5 rounded-full">
+            <h3 class="mt-4 text-2xl font-sans">Scarlett</h3>
+          </div>
+          
+          <div class="p-14 text-center border text-white">
+            <p class="text-xl font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis?</p>
+            <img src="images/pic-3.png" class="mt-4 ml-5 rounded-full">
+            <h3 class="mt-4 text-2xl font-sans">Andre</h3>
+          </div>
+        </div>
+      </section>
+      <!-- review section ends -->
+
+
+      <!-- contact section starts  -->
+      <section class="p-20" id="contact">
+        <h1 class="text-center text-white uppercase pb-12 text-4xl"> <span class="uppercase text-yellow-800">contact</span> us </h1>
+
+          <div class="w-full md:w-96 md:max-w-full mx-auto">
+            <div class="p-6 border border-gray-300 sm:rounded-md">
+              <form name="myform">
+                
+                <label class="block mb-6">
+                  <span class="text-white">Your name</span>
+                  <input type="text" name="name" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm" placeholder="Joe Bloggs"/>
+                </label>
+                
+                <label class="block mb-6">
+                  <span class="text-white">Email address</span>
+                  <input name="email" type="email" class=" block w-full mt-1 border-gray-300 rounded-md shadow-sm" placeholder="joe.bloggs@example.com"/>
+                </label>
+
+                <label class="block mb-6">
+                  <span class="text-white">Message</span>
+                  <textarea name="message" class=" block w-full mt-1 border-gray-300 rounded-md shadow-sm" rows="3"></textarea>
+                </label>
+
+                <div class="mb-6">
+                  <button type="submit" onclick="subMit()" class="h-10 px-5 text-white bg-yellow-800 rounded-lg hover:bg-violet-400">
+                    Contact Us
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </section>
+      <!-- contact section ends -->
+
+      
+      
+      <!-- footer section starts  -->
+      <section class="text-center text-white text-2xl">
+        <div class="">Created by <span class="uppercase text-yellow-800">Sadiya Zareen</span> | All rights reserved</div>
+      </section>
+      <!-- footer section ends -->
+
+
+
+      <script src="/cafe.js"></script>
+      
+
+  </body>
+</html>
